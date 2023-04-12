@@ -8,10 +8,13 @@ const ProdutosComponent = () => {
   const { data: produtos } = useGetProdutosQuery()
 
   // const produtoEstaNosFavoritos = (produto: ProdutoType) => {
-  //   const produtoId = produto.id
-  //   const IdsDosFavoritos = produtos.map((f) => f.id)
+  //   // const produtoId = produto.id
+  //   // const IdsDosFavoritos = produtos.map((f) => f.id)
 
-  //   return IdsDosFavoritos.includes(produtoId)
+  //   // return IdsDosFavoritos.includes(produtoId)
+
+  //   const IdsDosFavoritos = produtos?.map((p) => p.id)
+  //   return IdsDosFavoritos?.includes(produto.id)
   // }
 
   return (

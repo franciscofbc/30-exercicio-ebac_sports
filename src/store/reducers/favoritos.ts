@@ -16,6 +16,8 @@ const favoritosSlice = createSlice({
     favoritar: (state, action: PayloadAction<Produto>) => {
       const p = action.payload
 
+      // console.log(action)
+
       if (state.itens.find((pFind) => pFind.id === p.id)) {
         alert('Item já adicionado')
         // const favoritosSemProduto = state.itens.filter(
@@ -28,6 +30,9 @@ const favoritosSlice = createSlice({
     }
   }
 })
+
+console.log(favoritosSlice)
+// console.log(favoritosSlice.reducer)
 
 export const { favoritar } = favoritosSlice.actions
 export default favoritosSlice.reducer
