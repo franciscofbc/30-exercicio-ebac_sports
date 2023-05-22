@@ -28,6 +28,7 @@ const favoritosSlice = createSlice({
         state.itens.push(p)
       }
     }
+    // desfavoritar: (state, action: PayloadAction<Produto>) => {}
   }
 })
 
